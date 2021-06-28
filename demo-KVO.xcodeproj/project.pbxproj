@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4050A3E268A368D00D60788 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = A4050A3D268A368D00D60788 /* Application.m */; };
 		A4E3556E268A1F57009DE583 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E3556D268A1F57009DE583 /* main.m */; };
+		A4E35576268A1F70009DE583 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E35575268A1F70009DE583 /* NSObject+KVO.m */; };
+		A4E35579268A283E009DE583 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E35578268A283E009DE583 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A4050A3C268A368D00D60788 /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		A4050A3D268A368D00D60788 /* Application.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
 		A4E3556A268A1F57009DE583 /* demo-KVO */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "demo-KVO"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E3556D268A1F57009DE583 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4E35574268A1F70009DE583 /* NSObject+KVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		A4E35575268A1F70009DE583 /* NSObject+KVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
+		A4E35577268A283E009DE583 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A4E35578268A283E009DE583 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				A4E3556D268A1F57009DE583 /* main.m */,
+				A4E35574268A1F70009DE583 /* NSObject+KVO.h */,
+				A4E35575268A1F70009DE583 /* NSObject+KVO.m */,
+				A4E35577268A283E009DE583 /* Person.h */,
+				A4E35578268A283E009DE583 /* Person.m */,
+				A4050A3C268A368D00D60788 /* Application.h */,
+				A4050A3D268A368D00D60788 /* Application.m */,
 			);
 			path = "demo-KVO";
 			sourceTree = "<group>";
@@ -118,6 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4050A3E268A368D00D60788 /* Application.m in Sources */,
+				A4E35579268A283E009DE583 /* Person.m in Sources */,
+				A4E35576268A1F70009DE583 /* NSObject+KVO.m in Sources */,
 				A4E3556E268A1F57009DE583 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,7 +194,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -229,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -240,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
